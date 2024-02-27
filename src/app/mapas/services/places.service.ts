@@ -1,8 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Feature, PlacesResponse } from '../interfaces';
+
 import { PlacesApiClient } from '../api';
 import { MapService } from './map.service';
+import { Feature, PlacesResponse } from '../interfaces/places.interface';
 
 @Injectable({
   providedIn: 'root',

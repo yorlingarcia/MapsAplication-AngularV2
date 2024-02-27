@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MapService, PlacesService } from '../../services';
-import { Feature } from '../../interfaces';
+import { Feature } from '../../interfaces/places.interface';
 
 @Component({
   selector: 'app-search-results',
