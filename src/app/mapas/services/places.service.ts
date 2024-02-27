@@ -36,7 +36,11 @@ export class PlacesService {
   }
 
   getPlacesByQuery(query: string = '') {
-    //tod: evaluar cuando el query es un string vacio/nulo
+    if (query.trim().length === 0 || query.length === 0) {
+      this.places = [];
+      this.isLoadingPlaces = false;
+      return;
+    }
     if (!this.useLocation) throw Error(`No hay useLocation`);
     this.isLoadingPlaces = true;
     this.placesApi
@@ -46,6 +50,8 @@ export class PlacesService {
         },
       })
       .subscribe((resp) => {
+        console.log(resp.features);
+
         this.isLoadingPlaces = false;
         this.places = resp.features;
       });
