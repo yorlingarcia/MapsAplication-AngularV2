@@ -1,6 +1,6 @@
 # Mapas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9. Este proyecto es una revicion a la Api MApbox de forma superficial para hacr uso de mapas, geolocalizacion, rutas y busqueda de lugares
 
 ## Development server
 
